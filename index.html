@@ -22,6 +22,8 @@
             'background': '#F85559',
             'text-bg': '#FFF',
             'icon-bg': '#1212121a',
+            'para': '#12121299',
+            'blackie': '#12121299'
 
           }
         }
@@ -55,8 +57,8 @@
 
   </header>
   <main class="container mx-auto">
-    <div class="carousel w-full mt-16">
-      <div id="slide1" class="carousel-item relative w-full">
+    <div class="carousel   w-full mt-16 ">
+      <div id="slide1" class="carousel-item relative w-full bg-gradient-to-r from-[#121212] to-[#12121200]">
         <img src="images/banner1.png" class="w-full" />
 
         <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -64,10 +66,10 @@
           <a href="#slide2" class="btn btn-circle">❯</a>
         </div>
         <div class="absolute left-96 top-20">
-          <h1 class="text-7xl text-center text-white">Exotic tastes at your <br> doorstep</h1>
+          <h1 class="text-2xl text-7xl font-extrabold text-center text-white ">Exotic tastes at your <br> doorstep</h1>
           <p class="text-center mt-6 text-white">We supply highly quality organic products</p>
           <button
-            class="inline-flex justify-center items-center ml-80 mt-8 text-white bg-background pt-5 pb-5 pl-7 pr-7 rounded-lg">Shop
+            class="inline-flex justify-center items-center ml-64 mt-8 text-white bg-background font-extrabold pt-5 pb-5 pl-7 pr-7 rounded-lg hover:shadow-inner">Shop
             Now</button>
         </div>
       </div>
@@ -126,9 +128,10 @@
     </div>
     <section>
       <div class="flex  mt-36">
-        <div>
-          <h2>Deal of the day</h2>
-          <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin
+        <div class="mb-12">
+          <h2 class="font-extrabold text-5xl mb-6">Deal of the day</h2>
+          <p class="text-para">Contrary to popular belief, is not simply random text. It has roots in a piece of
+            classical <br> Latin
             literature from 45 BC, making it over 2000 years old.</p>
         </div>
         <div class="grid grid-flow-col gap-5 text-center auto-cols-max ml-auto">
@@ -137,55 +140,45 @@
               <span style="--value:15;"></span>:
 
             </span>
-            <span class="text-base">days</span>
+            <span class="text-para">days</span>
           </div>
           <div class="flex flex-col">
             <span class="countdown font-mono text-5xl text-center ">
               <span style="--value:10;"></span>:
             </span>
 
-            <span class="text-base">hours</span>
+            <span class="text-para">hours</span>
           </div>
           <div class="flex flex-col">
             <span class="countdown font-mono text-5xl text-center ">
               <span style="--value:24;"></span>:
 
             </span>
-            <span class="text-base">min</span>
+            <span class="text-para">min</span>
           </div>
           <div class="flex flex-col">
             <span class="countdown font-mono text-5xl text-center ">
               <span style="--value:52;"></span>
             </span>
-            <span class="text-base">sec</span>
+            <span class="text-para">sec</span>
           </div>
         </div>
       </div>
     </section>
     <section class="flex mt-12 container mx-auto">
       <div class="card w-80 h-96 bg-base-100 shadow-xl ">
-        <figure class="w-40 h-36 ml-20 px-10 pt-10">
+        <figure class="w-40 h-36 ml-20 px-10 pt-7">
           <img src="images/fruit6.png" alt="Shoes" class="rounded-xl" />
         </figure>
         <div class="card-body items-center text-center">
           <h2 class="card-title">12.90$ - 18.85$</h2>
-          <hr>
-          <p>Apples</p>
-          <div class=" rating rating-lg rating-half">
-            <input type="radio" name="rating-10" class="rating-hidden" />
-            <input type="radio" name="rating-10" class="bg-background mask mask-star-2 mask-half-1" />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" checked />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+          <hr class="h-px w-60 bg-icon-bg mt-4 mb-4">
+          <p class="text-para">Apples</p>
+          <div>
+            <img src="images/Group 24.svg" alt="">
           </div>
           <div class="card-actions mt-7">
-            <p class=" text-background">Details</p>
+            <p class=" text-background hover:bg-red-500 hover:text-white hover:cursor-pointer">Details</p>
           </div>
         </div>
       </div>
@@ -195,23 +188,13 @@
         </figure>
         <div class="card-body items-center text-center">
           <h2 class="card-title">12.90$ - 18.85$</h2>
-          <hr>
-          <p>Orange</p>
-          <div class=" rating rating-lg rating-half">
-            <input type="radio" name="rating-10" class="rating-hidden" />
-            <input type="radio" name="rating-10" class="bg-background mask mask-star-2 mask-half-1" />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" checked />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+          <hr class="h-px w-60 bg-icon-bg mt-4 mb-4">
+          <p class="text-para">Orange</p>
+          <div>
+            <img src="images/Group 24.svg" alt="">
           </div>
           <div class="card-actions mt-7">
-            <p class=" text-background">Details</p>
+            <p class=" text-background hover:bg-red-500 hover:text-white hover:cursor-pointer">Details</p>
           </div>
         </div>
       </div>
@@ -221,23 +204,13 @@
         </figure>
         <div class="card-body items-center text-center">
           <h2 class="card-title">12.90$ - 18.85$</h2>
-          <hr>
-          <p>Red Dragon</p>
-          <div class=" rating rating-lg rating-half">
-            <input type="radio" name="rating-10" class="rating-hidden" />
-            <input type="radio" name="rating-10" class="bg-background mask mask-star-2 mask-half-1" />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" checked />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+          <hr class="h-px w-60 bg-icon-bg mt-4 mb-4">
+          <p class="text-para">Red Dragon</p>
+          <div>
+            <img src="images/Group 24.svg" alt="">
           </div>
           <div class="card-actions mt-7">
-            <p class=" text-background">Details</p>
+            <p class=" text-background hover:bg-red-500 hover:text-white hover:cursor-pointer">Details</p>
           </div>
         </div>
       </div>
@@ -247,23 +220,13 @@
         </figure>
         <div class="card-body items-center text-center">
           <h2 class="card-title">12.90$ - 18.85$</h2>
-          <hr>
-          <p>Bananas</p>
-          <div class=" rating rating-lg rating-half">
-            <input type="radio" name="rating-10" class="rating-hidden" />
-            <input type="radio" name="rating-10" class="bg-background mask mask-star-2 mask-half-1" />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" checked />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-            <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+          <hr class="h-px w-60 bg-icon-bg mt-4 mb-4">
+          <p class="text-para">Bananas</p>
+          <div>
+            <img src="images/Group 24.svg" alt="">
           </div>
           <div class="card-actions mt-7">
-            <p class=" text-background">Details</p>
+            <p class=" text-background hover:bg-red-500 hover:text-white hover:cursor-pointer">Details</p>
           </div>
           <!-- <button
           class="inline-flex justify-center items-center  ml-80 mt-8 text-white bg-background pt-5 pb-5 pl-7 pr-7 rounded-lg">Shop
@@ -275,16 +238,16 @@
     </section>
     <div class=" text-center mr-96 mt-20">
       <button
-        class="text-center bg-background  inline-flex justify-center   items-center ml-96 mt-8 text-white  pt-5 pb-5 pl-7 pr-7 rounded-lg">Shop
+        class="text-center bg-background  inline-flex justify-center   items-center ml-96 mt-8 text-white  pt-5 pb-5 pl-7 pr-7 rounded-lg hover:shadow-inner">Shop
         All</button>
     </div>
     <section class="container mx-auto mt-40">
       <div class="hero min-h-screen" style="background-image: url(images/banner1.png);">
-        <div class="hero-overlay bg-opacity-60"></div>
+        <div class="hero-overlay bg-blackie"></div>
         <div class="hero-content text-center text-neutral-content">
           <div class="">
             <h1 class="mb-5 text-5xl font-bold">Meet the team section</h1>
-            <p class="mb-5">Contrary to popular belief, is not simply random text. It has roots in a piece of classical
+            <p class="mb-12">Contrary to popular belief, is not simply random text. It has roots in a piece of classical
               <br> Latin literature from 45 BC, making it over 2000 years old.
             </p>
 
@@ -352,39 +315,43 @@
 
     </section>
     <section class="text-center mt-36">
-      <h1 class="text-5xl">Why Choose Us</h1>
-      <p class="mt-6">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin
+      <h1 class="text-5xl font-extrabold">Why Choose Us</h1>
+      <p class="mt-6 text-para">Contrary to popular belief, is not simply random text. It has roots in a piece of
+        classical <br> Latin
         literature
         from 45 BC, making it over 2000 years old.</p>
     </section>
     <section class="container mx-auto flex justify-center items-center mt-12">
 
       <div class="mr-10">
-        <div class=" flex">
+        <div class=" flex gap-6">
           <div class="bg-icon-bg rounded-full w-14 h-14 flex justify-center items-center">
             <img class="p-3" src="images/group 1.svg" alt="">
           </div>
           <div>
-            <h2>Dedicated Team</h2>
-            <p>Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
+            <h2 class="font-extrabold text-2xl">Dedicated Team</h2>
+            <p class="text-para mt-9">Professional employees are there for you to pick <br>the most amazing and fresh
+              fruits.</p>
           </div>
         </div>
-        <div class=" flex">
+        <div class=" flex gap-6 mt-12">
           <div class="bg-icon-bg rounded-full w-14 h-14 flex justify-center items-center">
             <img class="p-3" src="images/love 1.svg" alt="">
           </div>
           <div>
-            <h2>Dedicated Team</h2>
-            <p>Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
+            <h2 class="font-extrabold text-2xl">Dedicated Team</h2>
+            <p class="text-para mt-9">Professional employees are there for you to pick <br> the most amazing and fresh
+              fruits.</p>
           </div>
         </div>
-        <div class=" flex">
+        <div class=" flex gap-6 mt-12">
           <div class="bg-icon-bg rounded-full w-14 h-14 flex justify-center items-center">
             <img class="p-3" src="images/gift-box 1.svg" alt="">
           </div>
           <div>
-            <h2>Dedicated Team</h2>
-            <p>Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
+            <h2 class="font-extrabold text-2xl">Dedicated Team</h2>
+            <p class="text-para mt-9">Professional employees are there for you to pick <br> the most amazing and fresh
+              fruits.</p>
           </div>
         </div>
       </div>
@@ -392,37 +359,61 @@
         <img src="images/whychoose1.png" alt="">
       </div>
       <div>
-        <div class=" flex">
+        <div class=" flex gap-6 ">
           <div class="bg-icon-bg rounded-full w-14 h-14 flex justify-center items-center">
             <img class="p-3" src="images/fruit 1.svg" alt="">
           </div>
           <div>
-            <h2>Dedicated Team</h2>
-            <p>Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
+            <h2 class="font-extrabold text-2xl">Dedicated Team</h2>
+            <p class="text-para mt-9">Professional employees are there for you to pick <br> the most amazing and fresh
+              fruits.</p>
           </div>
         </div>
-        <div class=" flex">
+        <div class=" flex gap-6 mt-12">
           <div class="bg-icon-bg rounded-full w-14 h-14 flex justify-center items-center">
             <img class="p-3" src="images/ice-cream 1.svg" alt="">
           </div>
           <div>
-            <h2>Dedicated Team</h2>
-            <p>Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
+            <h2 class="font-extrabold text-2xl">Dedicated Team</h2>
+            <p class="text-para mt-9">Professional employees are there for you to pick <br> the most amazing and fresh
+              fruits.</p>
           </div>
         </div>
-        <div class=" flex">
+        <div class=" flex gap-6 mt-12">
           <div class="bg-icon-bg rounded-full w-14 h-14 flex justify-center items-center">
             <img class="p-3" src="images/like 1.svg" alt="">
           </div>
           <div>
-            <h2>Dedicated Team</h2>
-            <p>Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
+            <h2 class="font-extrabold text-2xl">Dedicated Team</h2>
+            <p class="text-para mt-9">Professional employees are there for you to pick <br> the most amazing and fresh
+              fruits.</p>
           </div>
         </div>
       </div>
     </section>
   </main>
-  <footer></footer>
+  <footer class="min-w-full h-auto mt-36  text-center bg-black">
+    <div class="flex justify-center items-center mr-20 mb-10">
+      <img class="mt-36 ml-44 w-11 h-11 mr-2" src="images/logo.png" alt="">
+      <h2 class="mt-36 w-48 h-12 text-right text-4xl font-bold text-white">Fruit Burst</h2>
+    </div>
+    <div class="inline-flex  p-3 justify-center items-center ml-12 gap-16  ">
+      <a class="text-white" href="">Home</a>
+      <a class="text-white" href="">About Us</a>
+      <a class="text-white" href="">Shop</a>
+      <a class="text-white" href="">All Fruits</a>
+      <a class="text-white" href="">Support</a>
+      <a class="text-white" href="">My Account</a>
+    </div>
+    <div class="flex justify-center items-center gap-10 mt-14 ">
+      <img class="w-10 h-10 mb-36" src="images/twitter 1.svg" alt="">
+      <img class="w-10 h-10 mb-36" src="images/facebook 1 (1).svg" alt="">
+      <img class="w-10 h-10 mb-36" src="images/Group 49.svg" alt="">
+      <img class="w-10 h-10 mb-36" src="images/linkedin 1 (1).svg" alt="">
+      <img class="w-10 h-10 mb-36" src="images/instagram 1.svg" alt="">
+      <img class="w-10 h-10 mb-36" src="images/apple 1.svg" alt="">
+    </div>
+  </footer>
 </body>
 
 </html>
